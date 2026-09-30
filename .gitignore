@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Logs and test/coverage artifacts
+*.log
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local databases and generated evaluation output
+deepeye.db
+deepeye_eval_outputs/*
+!deepeye_eval_outputs/.gitkeep
+
+# Generated retrieval index and user uploads
+rag_index/*
+!rag_index/.gitkeep
+uploaded_images/*
+!uploaded_images/.gitkeep
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
